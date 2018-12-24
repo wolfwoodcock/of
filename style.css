@@ -1,0 +1,149 @@
+/* import a font from google */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+/* main styles for the body, global background color, text color, font, 0 out margin */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #000000;
+  color: #fdfdfd;
+  margin: 0;
+}
+
+
+/* styles for the nav */
+/* position fixed keeps the nav from scrolling off screen */
+/* top and left position the nav */
+/* flex styling keeps the nav elements nicely spaced out */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #fdfdfd;
+}
+
+/* a tags withing .nav should have a set color ( so they don't turn blue ) */
+/* and no decoration */
+.nav a {
+  color: #fdfdfd;
+  text-decoration: none;
+}
+
+/* apply a line through style to nav a tags on hover */
+.nav a:hover {
+  text-decoration: line-through;
+}
+
+/* 0 out the margin on divs */
+div {
+  margin: 0;
+}
+
+/* styles for the home page */
+/* set the background image */
+/* and flex align all the content on the page */
+#home {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#home h1 {
+  font-size: 8em;
+  margin: 16px;
+}
+
+#home h3 {
+  text-align: center;
+  margin: 0;
+}
+
+#about h3 {
+  color: red;
+}
+
+/* style for the projects pageg */
+/* silly background rainbow gradient */
+#projects {
+    background-color: #000000;
+}
+
+#projects h3 {
+  color: red;
+}
+
+/* projects container stores all the project images */
+/* padding to keep from overlapping with the nav */
+/* flex style to keep all the projects looking nice */
+.projects-container {
+  padding-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* project div styles */
+/* background image displays the project image */
+.project {
+  width: 500px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin: 16px;
+}
+
+/* styles for project detail page */
+#project-detail {
+  background-color: orange;
+}
+
+#project-detail h1 {
+  padding-top: 128px;
+  font-size: 8em;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+#project-detail p {
+  font-size: 2em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#project-detail img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+#experience {
+    background-color: #000000;
+  }
+#experience h4{
+  color: red;
+
+}
+
+#experience h3{
+  color: red;
+}
+
+/* some default page styles */
+/* min width and min height so our images always take the whole page */
+.page {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+/* this should probably be scoped to the nav but we didn't get there */
+a {
+  font-size: 2em;
+}
